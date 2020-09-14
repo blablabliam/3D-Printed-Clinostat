@@ -301,4 +301,11 @@ Wire Wire Line
 Connection ~ 5350 1150
 Text Notes 5550 1900 0    50   ~ 0
 Motor Polarity doesnt matter
+Wire Wire Line
+	3400 2550 3400 2650
+Wire Wire Line
+	3400 2650 2250 2650
+Wire Wire Line
+	3400 2550 3950 2550
+Connection ~ 2250 2650
 $EndSCHEMATC
