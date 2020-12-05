@@ -14,298 +14,294 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L Device:R_POT RV1
-U 1 1 5F5A34D0
-P 5350 3650
-F 0 "RV1" H 5280 3604 50  0000 R CNN
-F 1 "100K" H 5280 3695 50  0000 R CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 5350 3650 50  0001 C CNN
-F 3 "~" H 5350 3650 50  0001 C CNN
-	1    5350 3650
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5FB088CC
+P 3450 4650
+F 0 "J1" H 3368 4325 50  0000 C CNN
+F 1 "Power" H 3368 4416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 3450 4650 50  0001 C CNN
+F 3 "~" H 3450 4650 50  0001 C CNN
+	1    3450 4650
 	-1   0    0    1   
 $EndComp
 $Comp
-L Timer:LM555xN U1
-U 1 1 5F5A3E1E
-P 3950 2950
-F 0 "U1" H 3950 3531 50  0000 C CNN
-F 1 "LM555xN" H 3950 3440 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 4600 2550 50  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 4800 2550 50  0001 C CNN
-	1    3950 2950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D2
-U 1 1 5F5A5B1B
-P 5300 2900
-F 0 "D2" H 5300 3117 50  0000 C CNN
-F 1 "1N4148" H 5300 3026 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5300 2900 50  0001 C CNN
-F 3 "~" H 5300 2900 50  0001 C CNN
-	1    5300 2900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:D D3
-U 1 1 5F5A630E
-P 5300 3200
-F 0 "D3" H 5300 2983 50  0000 C CNN
-F 1 "1N4148" H 5300 3074 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5300 3200 50  0001 C CNN
-F 3 "~" H 5300 3200 50  0001 C CNN
-	1    5300 3200
+L Connector_Generic:Conn_01x02 J2
+U 1 1 5FB093D2
+P 3850 4650
+F 0 "J2" H 3768 4325 50  0000 C CNN
+F 1 "Power" H 3768 4416 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 3850 4650 50  0001 C CNN
+F 3 "~" H 3850 4650 50  0001 C CNN
+	1    3850 4650
 	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 5F5A6D7E
-P 4700 2600
-F 0 "R1" H 4770 2646 50  0000 L CNN
-F 1 "1k" H 4770 2555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4630 2600 50  0001 C CNN
-F 3 "~" H 4700 2600 50  0001 C CNN
-	1    4700 2600
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 5F5A6F6D
-P 5050 2600
-F 0 "R2" H 5120 2646 50  0000 L CNN
-F 1 "10k" H 5120 2555 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P7.62mm_Horizontal" V 4980 2600 50  0001 C CNN
-F 3 "~" H 5050 2600 50  0001 C CNN
-	1    5050 2600
-	1    0    0    -1  
 $EndComp
 $Comp
 L Device:C C1
-U 1 1 5F5A735E
-P 2400 2400
-F 0 "C1" H 2515 2446 50  0000 L CNN
-F 1 ".1mf" H 2515 2355 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D6.0mm_W2.5mm_P5.00mm" H 2438 2250 50  0001 C CNN
-F 3 "~" H 2400 2400 50  0001 C CNN
-	1    2400 2400
+U 1 1 5FB0B3EF
+P 4300 4600
+F 0 "C1" H 4415 4646 50  0000 L CNN
+F 1 "682" H 4415 4555 50  0000 L CNN
+F 2 "Capacitor_THT:C_Disc_D8.0mm_W2.5mm_P5.00mm" H 4338 4450 50  0001 C CNN
+F 3 "~" H 4300 4600 50  0001 C CNN
+	1    4300 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 4550 4050 4550
+Wire Wire Line
+	3650 4650 4050 4650
+Wire Wire Line
+	4050 4550 4050 4450
+Wire Wire Line
+	4050 4450 4300 4450
+Connection ~ 4050 4550
+Wire Wire Line
+	4050 4650 4050 4750
+Wire Wire Line
+	4050 4750 4300 4750
+Connection ~ 4050 4650
+Text Notes 3400 4900 0    50   ~ 0
+Pin 2 is 12V\nPin 1 is GND
+$Comp
+L Timer:LM555xN U1
+U 1 1 5FB1938C
+P 5400 3400
+F 0 "U1" H 5400 3981 50  0000 C CNN
+F 1 "LM555xN" H 5400 3890 50  0000 C CNN
+F 2 "Package_DIP:DIP-8_W7.62mm" H 6050 3000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/lm555.pdf" H 6250 3000 50  0001 C CNN
+	1    5400 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 4750 4300 5250
+Wire Wire Line
+	4300 5250 5400 5250
+Connection ~ 4300 4750
+Wire Wire Line
+	5400 3800 5400 5250
+$Comp
+L Device:CP C2
+U 1 1 5FB221D2
+P 4700 4600
+F 0 "C2" H 4818 4646 50  0000 L CNN
+F 1 ".1 uF" H 4818 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 4738 4450 50  0001 C CNN
+F 3 "~" H 4700 4600 50  0001 C CNN
+	1    4700 4600
 	1    0    0    -1  
 $EndComp
 $Comp
 L Device:CP C3
-U 1 1 5F5A7E96
-P 3300 2400
-F 0 "C3" H 3182 2354 50  0000 R CNN
-F 1 ".1mf" H 3182 2445 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 3338 2250 50  0001 C CNN
-F 3 "~" H 3300 2400 50  0001 C CNN
-	1    3300 2400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:CP C2
-U 1 1 5F5A8FC5
-P 2900 2400
-F 0 "C2" H 2782 2354 50  0000 R CNN
-F 1 ".1mf" H 2782 2445 50  0000 R CNN
-F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 2938 2250 50  0001 C CNN
-F 3 "~" H 2900 2400 50  0001 C CNN
-	1    2900 2400
-	-1   0    0    1   
-$EndComp
-$Comp
-L Transistor_BJT:TIP126 Q1
-U 1 1 5F5A9AB9
-P 4900 1950
-F 0 "Q1" H 5107 1996 50  0000 L CNN
-F 1 "TIP31C" H 5107 1905 50  0000 L CNN
-F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 5100 1875 50  0001 L CIN
-F 3 "http://www.fairchildsemi.com/ds/TI/TIP125.pdf" H 4900 1950 50  0001 L CNN
-	1    4900 1950
+U 1 1 5FB22B01
+P 5100 4600
+F 0 "C3" H 5218 4646 50  0000 L CNN
+F 1 ".1 uF" H 5218 4555 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D4.0mm_P2.00mm" H 5138 4450 50  0001 C CNN
+F 3 "~" H 5100 4600 50  0001 C CNN
+	1    5100 4600
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J2
-U 1 1 5F5B04EB
-P 1900 2250
-F 0 "J2" H 1818 1925 50  0000 C CNN
-F 1 "PowerHeader1" H 1818 2016 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 2250 50  0001 C CNN
-F 3 "~" H 1900 2250 50  0001 C CNN
-	1    1900 2250
-	-1   0    0    1   
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J3
-U 1 1 5F5B0B54
-P 1900 2650
-F 0 "J3" H 1818 2325 50  0000 C CNN
-F 1 "PowerHeader2" H 1818 2416 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 1900 2650 50  0001 C CNN
-F 3 "~" H 1900 2650 50  0001 C CNN
-	1    1900 2650
-	-1   0    0    1   
-$EndComp
-Text Notes 1000 3050 0    50   ~ 0
-1 is +12v, 2 is grnd
 Wire Wire Line
-	3950 3350 2400 3350
+	4300 4750 4700 4750
 Wire Wire Line
-	2400 3350 2400 2550
-Connection ~ 2400 2550
+	4700 4750 5100 4750
+Connection ~ 4700 4750
 Wire Wire Line
-	3450 3150 2250 3150
+	4700 4450 4700 3400
 Wire Wire Line
-	2250 3150 2250 2650
+	4700 3400 4900 3400
 Wire Wire Line
-	4450 2750 4700 2750
+	5100 4450 5950 4450
 Wire Wire Line
-	4700 2450 4700 1950
-$Comp
-L Connector_Generic:Conn_01x02 J1
-U 1 1 5F5B6A46
-P 5600 1550
-F 0 "J1" H 5680 1542 50  0000 L CNN
-F 1 "MotorConnector" H 5680 1451 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5600 1550 50  0001 C CNN
-F 3 "~" H 5600 1550 50  0001 C CNN
-	1    5600 1550
-	1    0    0    -1  
-$EndComp
+	5950 4450 5950 3600
+Wire Wire Line
+	5950 3600 5900 3600
 $Comp
 L Device:D D1
-U 1 1 5F5A566A
-P 5150 1550
-F 0 "D1" H 5150 1767 50  0000 C CNN
-F 1 "1N4148" H 5150 1676 50  0000 C CNN
-F 2 "Diode_THT:D_DO-35_SOD27_P7.62mm_Horizontal" H 5150 1550 50  0001 C CNN
-F 3 "~" H 5150 1550 50  0001 C CNN
-	1    5150 1550
+U 1 1 5FB287DB
+P 6150 3250
+F 0 "D1" V 6104 3330 50  0000 L CNN
+F 1 "D" V 6195 3330 50  0000 L CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 6150 3250 50  0001 C CNN
+F 3 "~" H 6150 3250 50  0001 C CNN
+	1    6150 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:D D2
+U 1 1 5FB290B9
+P 6450 3250
+F 0 "D2" V 6496 3170 50  0000 R CNN
+F 1 "D" V 6405 3170 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 6450 3250 50  0001 C CNN
+F 3 "~" H 6450 3250 50  0001 C CNN
+	1    6450 3250
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 5FBF9AED
+P 6700 3550
+F 0 "R1" H 6770 3596 50  0000 L CNN
+F 1 "10k" H 6770 3505 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 6630 3550 50  0001 C CNN
+F 3 "~" H 6700 3550 50  0001 C CNN
+	1    6700 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	5300 1550 5350 1550
-Connection ~ 2400 2250
+	6700 3700 6700 4250
 Wire Wire Line
-	2100 2150 2250 2150
+	6700 4250 4300 4250
 Wire Wire Line
-	2250 2150 2250 2550
+	4300 4250 4300 4450
+Connection ~ 4300 4450
 Wire Wire Line
-	2100 2550 2250 2550
-Connection ~ 2250 2550
+	5900 3400 6150 3400
 Wire Wire Line
-	2250 2550 2400 2550
+	6450 3400 6700 3400
+Connection ~ 6450 3400
+$Comp
+L Device:R_POT_TRIM RV1
+U 1 1 5FC07765
+P 6300 2850
+F 0 "RV1" V 6093 2850 50  0000 C CNN
+F 1 "100k_Trimpot" V 6184 2850 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x03_P2.00mm_Vertical" H 6300 2850 50  0001 C CNN
+F 3 "~" H 6300 2850 50  0001 C CNN
+	1    6300 2850
+	0    1    1    0   
+$EndComp
+Connection ~ 6150 3400
 Wire Wire Line
-	2200 2650 2200 2250
+	6150 3400 6450 3400
 Wire Wire Line
-	2100 2250 2200 2250
+	5950 3600 6050 3600
+Connection ~ 5950 3600
 Wire Wire Line
-	2050 2650 2100 2650
-Connection ~ 2200 2650
+	5400 3000 5400 2750
 Wire Wire Line
-	2200 2650 2250 2650
-Connection ~ 2100 2650
+	5400 2750 4300 2750
 Wire Wire Line
-	2100 2650 2200 2650
-Connection ~ 2200 2250
+	4300 2750 4300 3600
+Connection ~ 4300 4250
 Wire Wire Line
-	2200 2250 2400 2250
+	4900 3200 4750 3200
 Wire Wire Line
-	5000 2150 2900 2150
-Connection ~ 2250 2150
+	4750 3200 4750 3900
 Wire Wire Line
-	3450 2750 3300 2750
+	4750 3900 6050 3900
 Wire Wire Line
-	3200 2750 3200 3600
+	6050 3900 6050 3600
+Connection ~ 6050 3600
 Wire Wire Line
-	3200 3600 4650 3600
+	6050 3600 6300 3600
+$Comp
+L Device:R R2
+U 1 1 5FC13F1C
+P 5900 2850
+F 0 "R2" H 5970 2896 50  0000 L CNN
+F 1 "1k" H 5970 2805 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" V 5830 2850 50  0001 C CNN
+F 3 "~" H 5900 2850 50  0001 C CNN
+	1    5900 2850
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4650 3600 4650 3150
+	5900 3200 5900 3000
+$Comp
+L Transistor_BJT:TIP126 Q1
+U 1 1 5FC199CB
+P 6100 2250
+F 0 "Q1" H 6307 2296 50  0000 L CNN
+F 1 "TIP31C" H 6307 2205 50  0000 L CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6300 2175 50  0001 L CIN
+F 3 "http://www.fairchildsemi.com/ds/TI/TIP125.pdf" H 6100 2250 50  0001 L CNN
+	1    6100 2250
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	4650 3150 4450 3150
+	6450 3100 6450 2850
 Wire Wire Line
-	2900 2250 3300 2250
+	6150 3100 6150 2850
 Wire Wire Line
-	2900 2250 2900 2150
-Connection ~ 2900 2250
-Connection ~ 2900 2150
+	6300 3600 6300 3000
 Wire Wire Line
-	2900 2150 2250 2150
+	5900 2700 5900 2250
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 5FC303A3
+P 7450 2200
+F 0 "J3" H 7368 1875 50  0000 C CNN
+F 1 "Motor" H 7368 1966 50  0000 C CNN
+F 2 "Connector_PinHeader_2.00mm:PinHeader_1x02_P2.00mm_Vertical" H 7450 2200 50  0001 C CNN
+F 3 "~" H 7450 2200 50  0001 C CNN
+	1    7450 2200
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	3450 2950 2900 2950
+	6200 2050 6750 2050
 Wire Wire Line
-	2900 2950 2900 2550
+	7000 2050 7000 2200
 Wire Wire Line
-	3300 2750 3300 2550
-Connection ~ 3300 2750
+	7000 2200 7250 2200
+$Comp
+L Device:D D3
+U 1 1 5FC35325
+P 6750 2250
+F 0 "D3" V 6796 2170 50  0000 R CNN
+F 1 "D" V 6705 2170 50  0000 R CNN
+F 2 "Diode_THT:D_DO-35_SOD27_P5.08mm_Vertical_AnodeUp" H 6750 2250 50  0001 C CNN
+F 3 "~" H 6750 2250 50  0001 C CNN
+	1    6750 2250
+	0    -1   -1   0   
+$EndComp
 Wire Wire Line
-	3300 2750 3200 2750
+	6750 2100 6750 2050
+Connection ~ 6750 2050
 Wire Wire Line
-	5200 3650 4650 3650
+	6750 2050 7000 2050
 Wire Wire Line
-	4650 3650 4650 3600
-Connection ~ 4650 3600
+	6750 2400 7100 2400
 Wire Wire Line
-	4450 2950 5050 2950
+	7100 2400 7100 2300
 Wire Wire Line
-	5050 2950 5050 2900
+	7100 2300 7250 2300
 Wire Wire Line
-	5050 2900 5150 2900
+	6200 2450 6200 2550
 Wire Wire Line
-	5050 2950 5050 3200
+	6200 2550 6950 2550
 Wire Wire Line
-	5050 3200 5150 3200
-Connection ~ 5050 2950
+	6950 2550 6950 5250
 Wire Wire Line
-	5800 2900 5800 3800
+	6950 5250 5400 5250
+Connection ~ 5400 5250
 Wire Wire Line
-	5800 3800 5350 3800
+	6750 2400 6750 2500
 Wire Wire Line
-	5450 2900 5800 2900
+	6750 2500 5400 2500
 Wire Wire Line
-	5450 3200 5550 3200
+	5400 2500 5400 2750
+Connection ~ 6750 2400
+Connection ~ 5400 2750
 Wire Wire Line
-	5550 3200 5550 3500
+	4900 3600 4300 3600
+Connection ~ 4300 3600
 Wire Wire Line
-	5550 3500 5350 3500
-Connection ~ 5050 2900
-Wire Wire Line
-	5050 2900 5050 2750
-Wire Wire Line
-	5050 2450 5050 2250
-Wire Wire Line
-	5050 2250 5450 2250
-Wire Wire Line
-	5450 2250 5450 1800
-Wire Wire Line
-	5000 1550 5000 1650
-Wire Wire Line
-	5350 1550 5350 1150
-Wire Wire Line
-	5350 1150 2400 1150
-Wire Wire Line
-	2400 1150 2400 2250
-Connection ~ 5350 1550
-Wire Wire Line
-	5350 1550 5400 1550
-Wire Wire Line
-	5400 1650 5000 1650
-Connection ~ 5000 1650
-Wire Wire Line
-	5000 1650 5000 1750
-Wire Wire Line
-	6550 1800 6550 1150
-Wire Wire Line
-	6550 1150 5350 1150
-Wire Wire Line
-	5450 1800 6550 1800
-Connection ~ 5350 1150
-Text Notes 5550 1900 0    50   ~ 0
-Motor Polarity doesnt matter
-Wire Wire Line
-	3400 2550 3400 2650
-Wire Wire Line
-	3400 2650 2250 2650
-Wire Wire Line
-	3400 2550 3950 2550
-Connection ~ 2250 2650
+	4300 3600 4300 4250
+Text Notes 7350 7500 0    50   ~ 0
+Second Revision
+Text Notes 8150 7650 0    50   ~ 0
+11-26-2020\n
+Text Notes 2400 4700 0    50   ~ 0
+2 power headers\nallow daisy chaining.
+Text Notes 5550 1950 0    50   ~ 0
+TIP31c requires heat sink!
+Text Notes 7600 2250 0    50   ~ 0
+Remember to lable the red and black wire locations.\n
+Text Notes 7200 3450 0    50   ~ 0
+Trimpot is chassis mounted for controlling speed.
+Text Notes 2450 5150 0    50   ~ 0
+Remember to lable the power polarity!
 $EndSCHEMATC
